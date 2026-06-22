@@ -1,7 +1,6 @@
 package comparable_comparators;
 
-@SuppressWarnings("rawtypes")
-public class Laptop implements Comparable {
+public class Laptop implements Comparable<Laptop> {
 	private int id;
 	private String brand;
 	private int ram;
@@ -42,9 +41,8 @@ public class Laptop implements Comparable {
 		return "Laptop [id=" + id + ", brand=" + brand + ", ram=" + ram + ", price=" + price + "]";
 	}
 	@Override
-	public int compareTo(Object o) {
-		Laptop l = (Laptop)o;
-		return this.ram-l.ram;
+	public int compareTo(Laptop o) {
+		return this.ram-o.ram;
 
 	}
 	

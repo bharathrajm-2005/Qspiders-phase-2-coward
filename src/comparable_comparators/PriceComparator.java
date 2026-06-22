@@ -2,12 +2,9 @@ package comparable_comparators;
 
 import java.util.Comparator;
 
-@SuppressWarnings("rawtypes")
-public class PriceComparator implements Comparator {
+public class PriceComparator implements Comparator<Laptop> {
 	@Override
-	public int compare(Object o1, Object o2) {
-		Laptop l1 = (Laptop)o1;
-		Laptop l2 = (Laptop)o2;
+	public int compare(Laptop l1, Laptop l2) {
 		
 		return (int)(l2.getPrice()-l1.getPrice());
 	}

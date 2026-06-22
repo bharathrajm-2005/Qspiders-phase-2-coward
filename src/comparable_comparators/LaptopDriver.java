@@ -3,7 +3,6 @@ package comparable_comparators;
 import java.util.*;
 
 public class LaptopDriver {
-@SuppressWarnings("unchecked")
 public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	Laptop[]laptops = new Laptop[10];

@@ -2,13 +2,17 @@ package comparable_comparators;
 
 import java.util.Comparator;
 
-@SuppressWarnings("rawtypes")
-public class BrandComparator implements Comparator{
-
+public class BrandComparator implements Comparator<Laptop>{
+	
+//	public <T>BrandComparator(T o) {
+//		System.out.println(o);
+//	}
+	
+	public static<T>void leo(T o){
+		System.out.println(o);
+	}
 	@Override
-	public int compare(Object o1, Object o2) {
-		Laptop l1 = (Laptop)o1;
-		Laptop l2 = (Laptop)o2;
+	public int compare(Laptop l1, Laptop l2) {
 		
 		return l1.getBrand().compareTo(l2.getBrand());
 	}
