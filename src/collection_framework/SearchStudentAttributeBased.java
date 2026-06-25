@@ -12,10 +12,7 @@ public class SearchStudentAttributeBased {
 		students.add(new Student(106, "Bala Prami", 90));
 	
 		System.out.println(searchStudent(100));
-		
-		
 		students.remove(new Student(105, "Bala Pram", 90));
-		
 		System.out.println(students.size());
 
 	}

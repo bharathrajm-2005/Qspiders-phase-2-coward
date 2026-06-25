@@ -2,7 +2,7 @@ package collection_framework;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>{
 	private int id;
 	private String name;
 	private int marks;
@@ -49,6 +49,10 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	@Override
+	public int compareTo(Student o) {
+		return this.id-o.id;
 	}
 	
 }
